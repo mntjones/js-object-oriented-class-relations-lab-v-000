@@ -1,6 +1,7 @@
 let driverId = 0;
 let passengerId = 0;
 let tripId = 0;
+let stored = {}
 
 class Driver {
   constructor (name, id) {
