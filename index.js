@@ -1,7 +1,7 @@
 let driverId = 0;
 let passengerId = 0;
 let tripId = 0;
-let stored = {}
+let stored = {drivers: [], passengers: [], trips: []}
 
 class Driver {
   constructor (name, id) {
