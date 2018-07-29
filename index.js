@@ -18,7 +18,8 @@ class Driver {
   
   passengers() {
     // returns trip with matching driver Ids
-    // 
+    // map returns new array, after performing some function on
+    // original array (calling trip.passenger -> gets passenger)
     return this.trips().map( trip => {
       return trip.passenger();
     });
@@ -39,7 +40,9 @@ class Passenger {
   }
   
   drivers() {
-    
+    return this.trips().map( trip => {
+      return trip.driver();
+    });
   }
 }
 
