@@ -17,7 +17,11 @@ class Driver {
   }
   
   passengers() {
-    
+    // returns trip with matching driver Ids
+    // 
+    return this.trips().map( trip => {
+      return trip.passenger();
+    });
   }
 }
 
