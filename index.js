@@ -50,7 +50,10 @@ class Trip {
   }
   
   driver() {
-    
+    return stored.drivers.find(driver => {
+      return driver.id === this.driverId;
+    });
+
   }
   
   passenger() {
